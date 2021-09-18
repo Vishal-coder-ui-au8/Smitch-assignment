@@ -1,0 +1,31 @@
+{
+  "name": "2mg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node -r esm backend/server.js",
+    "server": "nodemon -r esm backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "data:import": "node -r esm backend/seeder",
+    "data:destroy": "node -r esm backend/seeder -d"
+  },
+  "keywords": [],
+  "author": "sourya gupta",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.16",
+    "mongoose-beautiful-unique-validation": "^7.1.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
