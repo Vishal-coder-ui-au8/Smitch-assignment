@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # 1. Clone the repository
     
-    
+     https://github.com/Vishal-coder-ui-au8/Smitch-assignment.git
   
 # 2. Setting Up Application
 
